@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing checker</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content">
+
+        <div class="time">
+            <div class="time-1">
+                <label for="mins" id="label">Select the Time</label>
+                <select name="min" id="mins">
+                    <option value="60000">1 min</option>
+                    <option value="120000">2 mins.</option>
+                    <option value="180000">3 mins.</option>
+                </select>
+            </div>
+        </div>
+        <div class="info">
+            <span class="cont">
+                <p>Time Left</p>
+                <p class="time_left"></p>
+            </span>
+            <span class="cont">
+                <p>Words Typed</p>
+
+                <p class="word_cnt"></p>
+
+            </span>
+            <span class="cont">
+                <p>Errors</p>
+                <p class="errors"></p>
+            </span>
+            <span class="cont">
+                <p>Accuracy</p>
+                <p class="cspeed"></p>
+            </span>
+
+        </div>
+
+        <div class="ui">
+            <div class="type-info">
+            </div>
+            <textarea name="" id="typing_user" cols="30" rows="10"></textarea>
+        </div>
+        <div class="btns">
+            <button id="btn1" class="btn btn-warning">Start Your Typing test</button>
+            <button id="g2" class="btn btn-warning">Retry Submission</button>
+            <button id="refresh" class="btn btn-info">Change text</button>
+            <button id="stop" class="btn btn-danger">Stop</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
